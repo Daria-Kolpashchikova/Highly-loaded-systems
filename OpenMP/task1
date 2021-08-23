@@ -3,12 +3,12 @@
 #define eps 0.0000001
 using namespace std;
 
-double f(double x)
+double f(double x) // подинтегральная функция 
 {
     return 4.0 / (1 + x * x);
 }
 
-double parallelProgram(double a, double b)
+double parallelProgram(double a, double b)//параллельная версия функции вычисления интеграла
 {
 
     double I = eps + 1, I1 = 0;
@@ -27,7 +27,7 @@ double parallelProgram(double a, double b)
     return I1;
 }
 
-double sequentVersion(double a, double b)
+double sequentVersion(double a, double b) //функция вычисления интеграла
 {
 
     double I = eps + 1, I1 = 0;
