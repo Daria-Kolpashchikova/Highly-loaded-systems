@@ -1,5 +1,6 @@
 #include <iostream>
 #include <math.h>
+#include <omp.h>
 #define eps 0.0000001
 using namespace std;
 
